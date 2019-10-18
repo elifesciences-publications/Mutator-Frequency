@@ -19,7 +19,8 @@ The number of beneficial and deleterious mutationsis then drawn from a binomial 
 new mutations are assigned to randomly chosen non-mutated fitness loci. Mutation is encoded by the function mutate_population.
 
 Parameter values for a given simulation run are defined in Lines 117 – 123 as follows: 
-  pop_Ni = 107 			(Total population size)
+
+  pop_Ni = 10e7 		(Total population size)
   init_mut_N = n0 		(Size of the initial mutator subpopulation) 
   sb = 0.1 			(Selective effect of new beneficial mutations, constant)
   sd = 0.1 			(Selective effect of new deleterious mutations, constant)
@@ -27,9 +28,10 @@ Parameter values for a given simulation run are defined in Lines 117 – 123 as 
   Ub = 0.000001 		(Per-individual beneficial mutation rate)
   Ud = 0.0001 			(Per-individual deleterious mutation rate)
 
-Simulation is run in Julia 1.0 and produces two types of files 
-(where X is the number of the particular simulation run in a job array if needed):
+Simulation is run in Julia 1.0 and produces two types of files (where X is the number of the particular simulation run in a job array if needed):
+	
 	Xmutator_traces.csv: records mutator frequency for every generation of the simulation 
                        (comma-delimited, different runs of the simulation are separated by line breaks).
+	
 	Xtime_to_mut.csv: records the time to mutator fixation (0.0 if mutator is lost) in each simulation run 
                     (comma-delimited, sets of simulation runs at different starting frequencies are separated by line breaks).
