@@ -20,13 +20,13 @@ new mutations are assigned to randomly chosen non-mutated fitness loci. Mutation
 
 Parameter values for a given simulation run are defined in Lines 117 – 123 as follows: 
 
-  pop_Ni = 10e7 		(Total population size)
-  init_mut_N = n0 		(Size of the initial mutator subpopulation) 
-  sb = 0.1 			(Selective effect of new beneficial mutations, constant)
-  sd = 0.1 			(Selective effect of new deleterious mutations, constant)
-  mutator_strength = 100.0 	(The fold increase in the mutator mutation rate over the non-mutator)
-  Ub = 0.000001 		(Per-individual beneficial mutation rate)
-  Ud = 0.0001 			(Per-individual deleterious mutation rate)
+	pop_Ni = 10e7 			(Total population size)
+	init_mut_N = n0 		(Size of the initial mutator subpopulation) 
+	sb = 0.1 			(Selective effect of new beneficial mutations, constant)
+	sd = 0.1 			(Selective effect of new deleterious mutations, constant)
+	mutator_strength = 100.0 	(The fold increase in the mutator mutation rate over the non-mutator)
+	Ub = 0.000001 			(Per-individual beneficial mutation rate)
+	Ud = 0.0001 			(Per-individual deleterious mutation rate)
 
 Simulation is run in Julia 1.0 and produces two types of files (where X is the number of the particular simulation run in a job array if needed):
 	
