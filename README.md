@@ -1,5 +1,5 @@
 This repository contains the associated simulation code for the manuscript “Selection on mutators is not frequency-dependent” 
-by Yevgeniy Raynes and Daniel M. Weinreich.
+by Yevgeniy Raynes and Daniel M. Weinreich.https://doi.org/10.7554/eLife.51177
 
 Simulation code is based on the individual-based, stochastic simulation previously described in Raynes et al. (PNAS 115(13): 3422-3427). 
 In brief, we consider haploid asexual populations of constant size, N, evolving in discrete, non-overlapping generations according to 
